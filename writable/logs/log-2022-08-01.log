@@ -1,0 +1,66 @@
+CRITICAL - 2022-08-01 00:00:07 --> date_format(): Argument #1 ($object) must be of type DateTimeInterface, string given
+in APPPATH\Views\kanban\index.php on line 31.
+ 1 APPPATH\Views\kanban\index.php(31): date_format('2022-07-31 22:59:59', 'd-M-Y H:i:s')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kanban\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('kanban/index', [], true)
+ 5 APPPATH\Controllers\KanbanController.php(24): view('kanban/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\KanbanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KanbanController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-01 00:00:51 --> date() expects at least 1 argument, 0 given
+in APPPATH\Views\kanban\index.php on line 31.
+ 1 APPPATH\Views\kanban\index.php(31): date()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kanban\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('kanban/index', [], true)
+ 5 APPPATH\Controllers\KanbanController.php(24): view('kanban/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\KanbanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KanbanController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-01 00:03:50 --> date_format(): Argument #1 ($object) must be of type DateTimeInterface, string given
+in APPPATH\Views\kanban\index.php on line 33.
+ 1 APPPATH\Views\kanban\index.php(33): date_format('2022-07-31 22:59:59', 'Y-m-d')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kanban\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('kanban/index', [], true)
+ 5 APPPATH\Controllers\KanbanController.php(24): view('kanban/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\KanbanController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KanbanController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-01 00:05:36 --> Object of class DateTime could not be converted to string
+in APPPATH\Views\kanban\index.php on line 34.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('kanban/index', [], true)
+ 4 APPPATH\Controllers\KanbanController.php(24): view('kanban/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\KanbanController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KanbanController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-08-01 10:34:17 --> MySQL server has gone away
+CRITICAL - 2022-08-01 10:34:17 --> MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `priorities`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `priorities`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `priorities`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `priorities`', [], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\TicketController.php(99): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\TicketController->new()
+ 9 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TicketController))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
