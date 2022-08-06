@@ -37,6 +37,8 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 
 
+$routes->get('exportarpdf', 'TicketController::exportarPDF');
+$routes->get('exportarxlsx', 'TicketController::exportarXLSX');
 
 $routes->get('tickets', 'TicketController::index');
 $routes->get('tickets/new', 'TicketController::new');
@@ -47,6 +49,7 @@ $routes->put('tickets/(:num)', 'TicketController::update/$1');
 $routes->delete('tickets/(:num)', 'TicketController::delete/$1');
 
 $routes->resource('kanban', ['controller' => 'kanbanController']);
+
 
 $routes->get('/', 'Home::index');
 

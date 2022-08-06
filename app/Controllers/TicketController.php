@@ -236,5 +236,9 @@ class TicketController extends ResourceController
         echo 'Este script exporta datos de la base de datos a un archivo .xlsx';
     }
 
+	public function exportarPDF()
+	{
+		echo "Aquí irá la exportación en PDF";
+	}
 
 }
