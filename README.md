@@ -1,11 +1,10 @@
 # Supportickets
 
-## App para gestión de tickets de soporte
+## Codeigniter
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+Es el framework usado en el desarrollo de esta aplicación web.
 
-## What is CodeIgniter?
+## Base de datos
+La base de datos está diseñada a través de migraciones.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+
